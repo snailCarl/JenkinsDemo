@@ -1,5 +1,5 @@
 pipeline {
-    agent { docker { image 'node' } }
+    agent { /usr/local/bin/docker { image 'node' } }
     stages {
         stage('build') {
             steps {
